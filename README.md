@@ -41,7 +41,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@deno/mod.js';
+import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@v0.0.1-deno/mod.js';
 ```
 
 #### ndarray2array( arr )
@@ -90,7 +90,7 @@ import strides2offset from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-s
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@deno/mod.js';
 import zeroTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@deno/mod.js';
 import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@deno/mod.js';
-import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@deno/mod.js';
+import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@v0.0.1-deno/mod.js';
 
 // Create a data buffer:
 var buffer = zeroTo( 27 );
