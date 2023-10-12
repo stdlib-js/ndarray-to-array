@@ -39,6 +39,11 @@
   "dependencies": {
     "@stdlib/assert-is-ndarray-like": "^0.1.0",
     "@stdlib/ndarray-base-to-array": "^0.1.0",
+    "@stdlib/ndarray-data-buffer": "github:stdlib-js/ndarray-data-buffer#main",
+    "@stdlib/ndarray-offset": "github:stdlib-js/ndarray-offset#main",
+    "@stdlib/ndarray-order": "github:stdlib-js/ndarray-order#main",
+    "@stdlib/ndarray-shape": "github:stdlib-js/ndarray-shape#main",
+    "@stdlib/ndarray-strides": "github:stdlib-js/ndarray-strides#main",
     "@stdlib/string-format": "^0.1.1",
     "@stdlib/types": "^0.1.0"
   },
@@ -48,8 +53,8 @@
     "@stdlib/assert-is-array": "^0.1.1",
     "@stdlib/assert-is-array-array": "^0.1.1",
     "@stdlib/bench": "^0.1.0",
-    "@stdlib/complex-imagf": "^0.1.0",
-    "@stdlib/complex-realf": "^0.1.0",
+    "@stdlib/complex-imagf": "^0.1.1",
+    "@stdlib/complex-realf": "^0.1.1",
     "@stdlib/ndarray-base-numel": "^0.1.1",
     "@stdlib/ndarray-base-shape2strides": "^0.1.1",
     "@stdlib/ndarray-base-strides2offset": "^0.1.1",
