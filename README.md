@@ -45,38 +45,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-to-array
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-ndarray2array = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var ndarray2array = require( 'path/to/vendor/umd/ndarray-to-array/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.ndarray2array;
-})();
-</script>
+var ndarray2array = require( '@stdlib/ndarray-to-array' );
 ```
 
 #### ndarray2array( x )
@@ -119,18 +111,13 @@ var out = ndarray2array( x );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-shape2strides@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-strides2offset@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var shape2strides = require( '@stdlib/ndarray-base-shape2strides' );
+var strides2offset = require( '@stdlib/ndarray-base-strides2offset' );
+var discreteUniform = require( '@stdlib/random-base-discrete-uniform' );
+var zeroTo = require( '@stdlib/array-base-zero-to' );
+var ndarray = require( '@stdlib/ndarray-ctor' );
+var ndarray2array = require( '@stdlib/ndarray-to-array' );
 
 // Create a data buffer:
 var buffer = zeroTo( 27 );
@@ -164,11 +151,6 @@ for ( i = 0; i < 20; i++ ) {
     arr = ndarray( 'generic', buffer, shape, strides, offset, order );
     console.log( JSON.stringify( ndarray2array( arr ) ) );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -260,7 +242,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-to-array/main/LICENSE
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/stdlib/tree/umd
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/stdlib
 
 </section>
 
