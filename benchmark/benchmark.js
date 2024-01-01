@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var bench = require( '@stdlib/bench' );
+var bench = require( '@stdlib/bench-harness' );
 var isArrayArray = require( '@stdlib/assert-is-array-array' );
 var shape2strides = require( '@stdlib/ndarray-base-shape2strides' );
 var strides2offset = require( '@stdlib/ndarray-base-strides2offset' );
