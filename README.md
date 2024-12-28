@@ -177,6 +177,7 @@ for ( i = 0; i < 20; i++ ) {
 
 -   <span class="package-name">[`@stdlib/ndarray-array`][@stdlib/ndarray/array]</span><span class="delimiter">: </span><span class="description">multidimensional arrays.</span>
 -   <span class="package-name">[`@stdlib/ndarray-ctor`][@stdlib/ndarray/ctor]</span><span class="delimiter">: </span><span class="description">multidimensional array constructor.</span>
+-   <span class="package-name">[`@stdlib/ndarray-to-json`][@stdlib/ndarray/to-json]</span><span class="delimiter">: </span><span class="description">serialize an ndarray as a JSON object.</span>
 
 </section>
 
@@ -259,6 +260,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 <!-- <related-links> -->
 
 [@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array
+
+[@stdlib/ndarray/to-json]: https://github.com/stdlib-js/ndarray-to-json
 
 <!-- </related-links> -->
 
