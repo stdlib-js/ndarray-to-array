@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2023 The Stdlib Authors.
@@ -16,35 +16,28 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { ndarray } from '@stdlib/types/ndarray';
 
 /**
-* Convert an ndarray to a generic array (which may include nested arrays).
+* Converts an ndarray to a generic array (which may include nested arrays).
 *
-* @module @stdlib/ndarray-to-array
+* @param x - input ndarray
+* @returns array (which may include nested arrays)
 *
 * @example
-* var ndarray = require( '@stdlib/ndarray-ctor' );
-* var ndarray2array = require( '@stdlib/ndarray-to-array' );
+* var array = require( '@stdlib/ndarray-array' );
 *
-* var buffer = [ 1, 2, 3, 4 ];
-* var shape = [ 2, 2 ];
-* var order = 'row-major';
-* var strides = [ 2, 1 ];
-* var offset = 0;
-*
-* var arr = ndarray( 'generic', buffer, shape, strides, offset, order );
-* // returns <ndarray>
-*
+* var arr = array( [ [ 1, 2 ], [ 3, 4 ] ] );
 * var out = ndarray2array( arr );
 * // returns [ [ 1, 2 ], [ 3, 4 ] ]
 */
-
-// MODULES //
-
-var ndarray2array = require( './main.js' );
+declare function ndarray2array( x: ndarray ): Array<any>;
 
 
 // EXPORTS //
 
-module.exports = ndarray2array;
+export = ndarray2array;
